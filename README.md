@@ -21,7 +21,7 @@ Install [Fabric](http://docs.fabfile.org/en/1.8/):
 
 Clone this repository:
 
-    $ git clone ... TODO
+    $ git clone git@github.com:morninj/quickspin.git
 
 Configuration
 -------------
