@@ -28,7 +28,7 @@ Configuration
 
 Copy `settings-sample.py` to `settings.py` and edit the variables in that 
 file. For instance, to install nginx, make sure to set `nginx = True`. You 
-should *read the whole file* and make sure the settings are correct.
+should **read the whole file** and make sure the settings are correct.
 
 ### WordPress
 
