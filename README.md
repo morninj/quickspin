@@ -42,22 +42,10 @@ The files in the `config/` directory will replace the default config files on
 the server. The files are fine as-is, but they're there if you need to edit 
 them.
 
-`www.conf` (replaces `/etc/php5/fpm/pool.d/www.conf`):
-
-* Change `listen = 127.0.0.1:9000` to `listen = /var/run/php5-fpm.sock`
-
-`fastcgi_params` (replaces `/etc/nginx/fastcgi_params`):
-
-* Change `SCRIPT_FILENAME` and add `PATH_INFO` (see 
-  http://wiki.nginx.org/PHPFcgiExample)
-
-`wp-sample-config.php`: as mentioned above, you'll need to edit the database 
-values if you want to use WordPress.
-
-`my.cnf`: TODO
-
 Use
 ---
+
+Make sure your settings in `settings.py` are correct, and then run:
 
     $ fab deploy
 
@@ -72,10 +60,10 @@ Some notes:
   putting the root password in a file, which is a security risk.
 * TODO: mysql questions
 
-
-
 To make sure the deployment was successful, connect to the server with your 
 private key:
 
     $ ssh -i ~/path/to/your/key/id_dsa username@host.com
 
+If you chose to install WordPress, you can configure your WordPress 
+installation at `http://yoursite.com/`.
