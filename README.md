@@ -47,7 +47,7 @@ Use
 
 Make sure your settings in `settings.py` are correct, and then run:
 
-    $ fab deploy
+    $ fab quickspin
 
 Some notes:
 
