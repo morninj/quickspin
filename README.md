@@ -55,9 +55,9 @@ Some notes:
   user. The other fields (`Full Name`, etc.) are optional.
 * The firewall configuration may ask you: `Command may disrupt existing ssh 
   connections. Proceed with operation (y|n)?` Type `y` and press enter.
-* If you're installing MySQL, you will need to set a root password, which you 
-  will need later on. It will also ask several questions. Enter these 
-  responses:
+
+If you're installing MySQL, you will need to set a root password, which you 
+will need later on. It will also ask several questions. Enter these responses:
 
     Change the root password? [Y/n] n
     Remove anonymous users? [Y/n] y
