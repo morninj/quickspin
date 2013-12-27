@@ -2,11 +2,15 @@ Quickspin
 =========
 
 This tool automates web server deployment. It can install and configure a 
-server, a database, WordPress, and basic security tools. It's best for small 
+server, a database, WordPress, and basic security tools.
+
+Quickspin is not a replacement for other server management tools like Puppet, 
+Chef, or Fabric. Instead, it's a shortcut for deploying servers for small 
 projects with low overhead.
 
 I've only tested this configuration on Ubuntu Server 12.04.3 LTS 64-bit, but 
-it should work on other Linux distributions with a little tweaking.
+it should work fine on most versions of Ubuntu or Debian, and it should work 
+on other Linux distributions with a little tweaking.
 
 I like the small instances from [Digital 
 Ocean](https://www.digitalocean.com/), but you can use any machine that allows 
