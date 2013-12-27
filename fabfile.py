@@ -1,4 +1,3 @@
-# TODO line length
 from fabric.api import *
 from fabric.operations import put
 import settings
