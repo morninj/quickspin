@@ -11,7 +11,7 @@ else:
 webroot = settings.web_directory + settings.site_name
 nginx_conf = webroot + '/config/' + settings.site_name
 
-def deploy():
+def quickspin():
     print 'Connecting to host %s...' % env.hosts[0]
     sudo('apt-get update && apt-get upgrade -y')
     if settings.add_new_user: add_new_user()
