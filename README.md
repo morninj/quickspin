@@ -75,3 +75,9 @@ private key:
 
 If you chose to install WordPress, you can configure your WordPress 
 installation at `http://yoursite.com/`.
+
+Feedback
+--------
+
+Send an email to [joseph] at [mornin] dot [org]. If others might be 
+interested, you can [open an issue](https://github.com/morninj/quickspin/issues).
