@@ -33,8 +33,8 @@ should **read the whole file** and make sure the settings are correct.
 ### WordPress
 
 If you want to install WordPress, edit `config/wp-config-sample.php` to 
-include your database details and save it as `config/wp-config.php`. You will 
-need the database details again when configuring MySQL.
+include your database details and save it as `config/wp-config.php`. Make sure 
+these details match the values for the MySQL database in `settings.py`.
 
 ### Config files
 
@@ -55,10 +55,18 @@ Some notes:
   user. The other fields (`Full Name`, etc.) are optional.
 * The firewall configuration may ask you: `Command may disrupt existing ssh 
   connections. Proceed with operation (y|n)?` Type `y` and press enter.
-* If you're installing MySQL, you'll need to enter a password several 
-  times for the root user. This is a small hassle, but it lets you avoid 
-  putting the root password in a file, which is a security risk.
-* TODO: mysql questions
+* If you're installing MySQL, you will need to set a root password, which you 
+  will need later on. It will also ask several questions. Enter these 
+  responses:
+
+    Change the root password? [Y/n] n
+    Remove anonymous users? [Y/n] y
+    Disallow root login remotely? [Y/n] y
+    Remove test database and access to it? [Y/n] y
+    Reload privilege tables now? [Y/n] y
+
+When it's finished, the script will reboot the system to make sure all changes 
+take effect.
 
 To make sure the deployment was successful, connect to the server with your 
 private key:
