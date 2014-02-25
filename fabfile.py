@@ -28,7 +28,7 @@ def quickspin():
 def add_new_user():
     sudo('adduser ' + settings.my_username)
     sudo('adduser %s sudo' % settings.my_username)
-    # Upload user's private key
+    # Upload user's public key
     put(settings.my_public_key, '/var/tmp/public_key')
     sudo('mkdir /home/%s/.ssh/' % settings.my_username)
     sudo('cat /var/tmp/public_key >> /home/%s/.ssh/authorized_keys' % \
